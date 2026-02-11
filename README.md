@@ -46,3 +46,68 @@ The model is designed to support discretionary or systematic swing trading strat
 
 ## Project Structure
 
+```
+quant-mean-reversion-trading-engine/
+
+strategies/     → Trading signal logic  
+backtesting/    → Backtesting engine and simulation tools  
+results/        → Performance output and trade logs  
+```
+
+---
+
+## Tech Stack
+
+- Python  
+- Pandas  
+- NumPy  
+- JSON data processing  
+- Quantitative trading research methods  
+
+---
+
+## Example Results
+
+The strategy was evaluated using historical SPY data to identify reversal zones and breakout confirmation signals. The system was also applied during live swing trading as a decision-support research tool.
+
+Backtesting performance results and trade logs are available in the `results/` directory.
+
+---
+
+## How To Run
+
+### 1. Clone Repository
+
+```
+git clone https://github.com/johnstremple/quant-mean-reversion-trading-engine.git
+```
+
+### 2. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Run Backtesting Engine
+
+```
+python backtesting/backtest_engine.py
+```
+
+---
+
+## Future Improvements
+
+- Machine learning signal optimization  
+- Real-time data pipeline integration  
+- Automated trade execution framework  
+- Multi-index confirmation models  
+- Enhanced visualization and analytics dashboard  
+
+---
+
+## Motivation
+
+This project was developed to explore systematic trading strategies, institutional liquidity behavior, and quantitative market analysis while strengthening Python development and financial modeling skills.
+
+---
