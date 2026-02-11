@@ -1,0 +1,6 @@
+{
+  "rsi_threshold": 30,
+  "vwap_deviation": 0.02,
+  "max_trades_per_day": 3,
+  "risk_per_trade": 0.01
+}
