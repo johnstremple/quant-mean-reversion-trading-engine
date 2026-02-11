@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+git add equity_curve.py results/equity_curve.png README.md
+git commit -m "Add normalized equity curve visualization"
+git push
