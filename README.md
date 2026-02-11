@@ -1,113 +1,54 @@
 # Quant Mean Reversion Trading Engine
 
-A Python-based algorithmic trading research system designed to analyze institutional market behavior and mean reversion signals using SPY as a market sentiment and liquidity indicator.
+## Overview
+A Python-based quantitative research project designed to test whether SPY mean reversion signals can improve breakout confirmation in correlated equities. This system focuses on structured research, modular design, and systematic backtesting.
 
-Instead of trading SPY directly, this model identifies potential market reversal zones and uses those signals to confirm bullish or bearish breakout entries in individual equities. The objective is to improve trade timing, reduce false breakout signals, and align individual stock momentum with broader market conditions.
+## Problem
+Breakout strategies often fail due to poor market timing. This project evaluates whether index-level reversals (SPY) can act as a confirmation filter to reduce false breakout entries.
 
----
-
-## Strategy Overview
-
-The model evaluates institutional flow and liquidity behavior within SPY to identify potential mean reversion opportunities and market turning points. These signals act as confirmation tools when trading breakout setups across correlated equities.
-
-By combining index-level market sentiment with individual stock momentum, the system aims to improve probability-based trade entry decisions.
-
----
-
-## Features
-
-- Institutional flow signal detection  
-- Mean reversion analysis using SPY market behavior  
-- Breakout trade confirmation framework  
-- Custom backtesting engine  
-- Performance tracking and trade analytics  
-- Modular architecture designed for strategy expansion  
-
----
-
-## Development History
-
-The initial version of this model was created in 2024 and used during live swing trading as a decision-support tool to confirm breakout entries.
-
-The current version represents a refactored and expanded rebuild focused on improved modular architecture, cleaner code structure, and a dedicated backtesting engine for systematic strategy evaluation.
-
----
-
-## Example Use Case
-
-The model is designed to support discretionary or systematic swing trading strategies by:
-
-- Confirming overall market direction  
-- Identifying potential reversal zones  
-- Filtering false breakout trades  
-- Improving entry timing using index-level liquidity signals  
-
----
+## What This Project Does
+- Detects mean reversion conditions in SPY
+- Uses those signals to confirm breakout setups
+- Simulates trades using a custom backtesting engine
+- Tracks performance metrics (win rate, drawdown, profit factor)
+- Stores trade logs and results for analysis
 
 ## Project Structure
+strategies/ → signal logic  
+backtesting/ → trade simulation engine  
+results/ → output data and performance logs  
 
-```
-quant-mean-reversion-trading-engine/
+## Performance Evaluation
+The system evaluates:
+- Win rate
+- Profit factor
+- Maximum drawdown
+- Trade frequency
+- Risk-adjusted performance
 
-strategies/     → Trading signal logic  
-backtesting/    → Backtesting engine and simulation tools  
-results/        → Performance output and trade logs  
-```
+## Version History
+v1 (2024): Initial prototype used for research and discretionary decision support  
+v2 (2025): Refactored modular rebuild with structured backtesting engine  
 
----
-
-## Tech Stack
-
-- Python  
-- Pandas  
-- NumPy  
-- JSON data processing  
-- Quantitative trading research methods  
-
----
-
-## Example Results
-
-The strategy was evaluated using historical SPY data to identify reversal zones and breakout confirmation signals. The system was also applied during live swing trading as a decision-support research tool.
-
-Backtesting performance results and trade logs are available in the `results/` directory.
-
----
-
-## How To Run
-
-### 1. Clone Repository
-
-```
-git clone https://github.com/johnstremple/quant-mean-reversion-trading-engine.git
-```
-
-### 2. Install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 3. Run Backtesting Engine
-
-```
-python backtesting/backtest_engine.py
-```
-
----
+## Limitations
+- Uses static parameters
+- Historical data only
+- No live API integration
+- No walk-forward validation yet
 
 ## Future Improvements
+- Add parameter optimization
+- Add walk-forward validation
+- Integrate real-time data
+- Build visualization dashboard
 
-- Machine learning signal optimization  
-- Real-time data pipeline integration  
-- Automated trade execution framework  
-- Multi-index confirmation models  
-- Enhanced visualization and analytics dashboard  
-
----
+## Tech Stack
+Python  
+Pandas  
+NumPy  
+JSON configuration  
 
 ## Motivation
-
-This project was developed to explore systematic trading strategies, institutional liquidity behavior, and quantitative market analysis while strengthening Python development and financial modeling skills.
+Built to strengthen systematic trading research, risk modeling, and Python engineering skills through structured experimentation and iterative development.
 
 ---
