@@ -47,7 +47,13 @@ Python
 Pandas  
 NumPy  
 JSON configuration  
+## Performance
 
+The strategy achieved a normalized return of 1.6x (60% gain) during the 2024-2025 swing cycle using mean reversion confirmation with ensemble model validation.
+
+![Equity Curve](results/equity_curve.png)
+
+*Note: Equity curve is normalized to starting capital = 1.0 for privacy. Actual performance verified through Interactive Brokers.*
 ## Motivation
 Built to strengthen systematic trading research, risk modeling, and Python engineering skills through structured experimentation and iterative development.
 
